@@ -7,7 +7,7 @@ modalBtns.forEach(button => {
     });
 });
 
-// Закрытие модальных окон
+// Закрытие модальных окан
 const closeBtns = document.querySelectorAll('.close-btn');
 closeBtns.forEach(button => {
     button.addEventListener('click', () => {
