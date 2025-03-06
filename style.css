@@ -63,9 +63,10 @@ nav ul li button:hover {
 }
 
 .intro h2 {
-    font-size: 1.8rem;  /* Уменьшаем размер текста */
+    font-size: 2.5rem;  /* Увеличиваем размер текста */
     font-family: 'Arial', sans-serif;
-    color: white; /* Изменяем цвет на белый */
+    color: black; /* Устанавливаем чёрный цвет */
+    margin-top: 40px; /* Увеличиваем отступ сверху */
 }
 
 .intro p {
@@ -87,21 +88,21 @@ nav ul li button:hover {
 
 .icon-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;  /* Используем space-evenly для равномерного распределения */
     width: 100%;
     max-width: 900px;  /* Увеличиваем максимальную ширину контейнера */
     margin: 0 auto;
 }
 
 .icon-container i {
-    font-size: 2.5rem;  /* Уменьшаем размер иконок */
+    font-size: 2.5rem;  /* Размер иконок */
     color: #ffffff;  /* Иконки белые */
-    margin: 0 15px;
+    margin: 0 8px;  /* Уменьшаем отступы между иконками (сейчас 8px) */
     transition: all 0.3s ease;
 }
 
 .icon-container i:hover {
-    color: #90e044;  /* Когда иконка активна, цвет становится ярким зелёным */
+    color: #90e044;  /* При наведении цвет становится зелёным */
     transform: scale(1.1);
 }
 
