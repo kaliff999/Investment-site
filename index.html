@@ -3,47 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Инвестиции для бизнеса</title>
+    <title>Инвестиции</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Инвестиции в бизнес</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>О компании</h2>
-        <p>Мы предлагаем лучшие решения для инвестиций в малый и средний бизнес. Наши эксперты помогут вам выбрать наилучшие стратегии для роста.</p>
-    </section>
 
-    <section id="services">
-        <h2>Наши услуги</h2>
+<header>
+    <h1>Инвестиционный сайт</h1>
+    <nav>
         <ul>
-            <li>Консалтинг по инвестиционным проектам</li>
-            <li>Оценка рисков и анализ рынка</li>
-            <li>Разработка инвестиционных стратегий</li>
+            <li><button class="modal-btn" data-modal="aboutModal">О нас</button></li>
+            <li><button class="modal-btn" data-modal="contactModal">Контакты</button></li>
+            <li><button class="modal-btn" data-modal="servicesModal">Услуги</button></li>
         </ul>
-    </section>
+    </nav>
+</header>
 
-  <section id="contact">
-    <h2>Контакты</h2>
-    <p>Телефон: +7 123 456 7890</p>
-    <p>Email: info@investment.com</p>
-    <button onclick="window.location.href='mailto:info@investment.com'">Написать нам</button> <!-- Кнопка для почты -->
-    <button onclick="window.location.href='tel:+71234567890'">Позвонить</button> <!-- Кнопка для звонка -->
-</section>
+<!-- Модальное окно для "О нас" -->
+<div id="aboutModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-close="aboutModal">&times;</span>
+        <h2>О нас</h2>
+        <p>Мы предлагаем инвестиционные решения для успешного будущего. Наши проекты отличаются надежностью и высоким доходом.</p>
+    </div>
+</div>
 
-    <footer>
-        <p>&copy; 2025 Инвестиции для бизнеса</p>
-    </footer>
+<!-- Модальное окно для "Контакты" -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-close="contactModal">&times;</span>
+        <h2>Контакты</h2>
+        <p>Телефон: +373 790 87 309 Olarescu"KLAIFF"Gheorghe</p>
+        <p>Email: gikugiku229@gmail.com</p>
+        <button onclick="window.location.href='mailto:info@investment.com'">Написать нам</button>
+        <button onclick="window.location.href='tel:+71234567890'">Позвонить</button>
+    </div>
+</div>
 
-    <script src="script.js"></script>
+<!-- Модальное окно для "Услуги" -->
+<div id="servicesModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-close="servicesModal">&times;</span>
+        <h2>Наши Услуги</h2>
+        <ul>
+            <li>Консультирование по инвестициям</li>
+            <li>Анализ рынка</li>
+            <li>Инвестиционные портфели</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Инвестиционный сайт. Все права защищены.</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
