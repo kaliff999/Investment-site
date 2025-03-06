@@ -3,54 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бизнес Инвестиции</title>
+    <title>Инвестиции в будущее</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Главный заголовок -->
     <header>
-        <h1>Инвестируй в своё будущее. Сделай шаг к финансовой свободе!</h1>
+        <h1>Инвестируй в будущее</h1>
+        <nav>
+            <ul>
+                <li><button onclick="openModal('aboutModal')">О нас</button></li>
+                <li><button onclick="openModal('contactModal')">Контакты</button></li>
+                <li><button onclick="openModal('servicesModal')">Услуги</button></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Новый текст -->
-    <div class="intro">
-        <h2>Будущее с умом</h2>
-        <p>Инвестиции, которые меняют жизнь</p>
-    </div>
+    <section class="intro">
+        <h2>Инвестируй в своё будущее. Сделай шаг к финансовой свободе!</h2>
+        <p>Приумножай свои доходы с нами — начни с малого, но достигай многого.</p>
+    </section>
 
-    <!-- Раздел с услугами -->
-    <section class="services">
-        <div class="service-item">
-            <h3>Контакты</h3>
-            <p>Свяжитесь с нами, чтобы узнать больше!</p>
-        </div>
-        <div class="service-item">
-            <h3>О нас</h3>
-            <p>Мы — команда профессионалов, готовых помочь вам в инвестициях.</p>
-        </div>
-        <div class="service-item">
-            <h3>Услуги</h3>
-            <p>Предлагаем услуги по инвестициям с гарантированным доходом.</p>
+    <section class="brand-icons">
+        <div class="icon-container">
+            <i class="fab fa-slack"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-zoom"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-trello"></i>
+            <i class="fab fa-telegram-plane"></i> <!-- ChatGPT -->
         </div>
     </section>
 
-    <!-- Иконки брендов -->
-    <div class="brand-icons">
-        <div class="icon-container">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
+    <!-- Модальные окна -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('aboutModal')">&times;</span>
+            <h3>О нас</h3>
+            <p>Мы — команда профессионалов, предлагающих уникальные инвестиционные возможности для стабильного роста вашего капитала.</p>
         </div>
     </div>
 
-    <!-- Модальные окна (примеры) -->
     <div id="contactModal" class="modal">
         <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Контакты</h2>
-            <p>Телефон: +373 790 87 309</p>
+            <span class="close-btn" onclick="closeModal('contactModal')">&times;</span>
+            <h3>Контакты</h3>
+            <p>Телефон: +373 790 87 309 (Olarescu "KALIFF" Gheorghe)</p>
             <p>Email: gikugiku229@gmail.com</p>
+        </div>
+    </div>
+
+    <div id="servicesModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('servicesModal')">&times;</span>
+            <h3>Наши Услуги</h3>
+            <p>Мы предлагаем инвестиционные решения с высоким потенциалом роста. Ваш капитал будет работать на вас!</p>
         </div>
     </div>
 
@@ -58,7 +65,6 @@
         <p>&copy; 2025 Все права защищены.</p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
