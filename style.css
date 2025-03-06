@@ -19,7 +19,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;  /* Уменьшаем размер заголовка */
     font-family: 'Helvetica', sans-serif;
 }
 
@@ -63,7 +63,7 @@ nav ul li button:hover {
 }
 
 .intro h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;  /* Уменьшаем размер текста */
     font-family: 'Arial', sans-serif;
     color: #9b1b30; /* Бордово-красный */
 }
@@ -89,14 +89,14 @@ nav ul li button:hover {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;  /* Увеличиваем максимальную ширину контейнера */
     margin: 0 auto;
 }
 
 .icon-container i {
-    font-size: 3rem;
+    font-size: 2.5rem;  /* Уменьшаем размер иконок */
     color: #b7975a;
-    margin: 0 20px;
+    margin: 0 15px;
     transition: all 0.3s ease;
 }
 
