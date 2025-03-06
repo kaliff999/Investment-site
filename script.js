@@ -3,7 +3,7 @@ const modalBtns = document.querySelectorAll('.modal-btn');
 modalBtns.forEach(button => {
     button.addEventListener('click', () => {
         const modalId = button.getAttribute('data-modal');
-        document.getElementById(modalId).style.display = 'block';
+        document.getElementById(modalId).style.display = 'block'; // Показываем модальное окно
     });
 });
 
@@ -12,7 +12,7 @@ const closeBtns = document.querySelectorAll('.close-btn');
 closeBtns.forEach(button => {
     button.addEventListener('click', () => {
         const modalId = button.getAttribute('data-close');
-        document.getElementById(modalId).style.display = 'none';
+        document.getElementById(modalId).style.display = 'none'; // Закрываем модальное окно
     });
 });
 
