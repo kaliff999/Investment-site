@@ -4,23 +4,29 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
+/* Заголовок */
 header {
-    background-color: #333;
+    background: linear-gradient(to right, #333, #b7975a); /* Градиент от чёрного к золотому */
     color: white;
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    font-family: 'Helvetica', sans-serif;
 }
 
+/* Навигация */
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -32,30 +38,37 @@ nav ul li button {
     background-color: #333;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
     cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 nav ul li button:hover {
-    background-color: #555;
+    background-color: #b7975a; /* Золотой при наведении */
+    color: black;
 }
 
 /* Основной раздел */
 .intro {
     text-align: center;
     padding: 50px 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    background: linear-gradient(to bottom, #1a1a1a, #4f5d73); /* Градиент чёрного с серым */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .intro h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    color: #b7975a; /* Золотой цвет */
 }
 
 .intro p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 20px;
+    color: #90e044; /* Яркий зелёный */
 }
 
 /* Секция с иконками брендов */
@@ -63,6 +76,8 @@ nav ul li button:hover {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    padding: 20px 0;
+    background-color: #333;
 }
 
 .icon-container {
@@ -72,14 +87,15 @@ nav ul li button:hover {
 }
 
 .icon-container i {
-    font-size: 3rem;
-    color: #333;
+    font-size: 4rem;
+    color: #b7975a; /* Золотой */
     margin: 0 20px;
-    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .icon-container i:hover {
-    color: #007bff;
+    color: #90e044; /* Яркий зелёный при наведении */
+    transform: scale(1.1); /* Увеличение иконок при наведении */
 }
 
 /* Модальные окна */
@@ -117,4 +133,34 @@ nav ul li button:hover {
 .close-btn:hover,
 .close-btn:focus {
     color: black;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Кнопки */
+button {
+    padding: 10px 20px;
+    background-color: #90e044; /* Яркий зелёный */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #b7975a; /* Золотой при наведении */
+    color: white;
 }
