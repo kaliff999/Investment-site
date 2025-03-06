@@ -1,4 +1,24 @@
-// Простой скрипт для демонстрации
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("Сайт загружен!");
+// Открытие модальных окон
+const modalBtns = document.querySelectorAll('.modal-btn');
+modalBtns.forEach(button => {
+    button.addEventListener('click', () => {
+        const modalId = button.getAttribute('data-modal');
+        document.getElementById(modalId).style.display = 'block';
+    });
+});
+
+// Закрытие модальных окон
+const closeBtns = document.querySelectorAll('.close-btn');
+closeBtns.forEach(button => {
+    button.addEventListener('click', () => {
+        const modalId = button.getAttribute('data-close');
+        document.getElementById(modalId).style.display = 'none';
+    });
+});
+
+// Закрытие модального окна, если кликнуть вне его
+window.addEventListener('click', (event) => {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+    }
 });
