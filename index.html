@@ -3,80 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Инвестиции</title>
+    <title>Инвестиции в будущее</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Подключаем Font Awesome для иконок -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Инвестируй в будущее — Достигай финансовой свободы</h1>
+        <nav>
+            <ul>
+                <li><button onclick="openModal('aboutModal')">О нас</button></li>
+                <li><button onclick="openModal('contactModal')">Контакты</button></li>
+                <li><button onclick="openModal('servicesModal')">Услуги</button></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Инвестиционный сайт</h1>
-    <nav>
-        <ul>
-            <li><button class="modal-btn" data-modal="aboutModal">О нас</button></li>
-            <li><button class="modal-btn" data-modal="contactModal">Контакты</button></li>
-            <li><button class="modal-btn" data-modal="servicesModal">Услуги</button></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
     <section class="intro">
-        <h2>Инвестиции в будущее</h2>
-        <p>Наши инвестиционные решения обещают рост доходности до 80% в год. Вложитесь в будущее и получите максимальный доход!</p>
+        <h2>Инвестируй в своё будущее. Сделай шаг к финансовой свободе!</h2>
+        <p>Приумножай свои доходы с нами — начни с малого, но достигай многого.</p>
     </section>
 
-    <!-- Иконки брендов по бокам -->
     <section class="brand-icons">
         <div class="icon-container">
-            <i class="fab fa-apple"></i> <!-- Иконка Apple -->
-            <i class="fab fa-google"></i> <!-- Иконка Google -->
-            <i class="fab fa-amazon"></i> <!-- Иконка Amazon -->
-            <i class="fab fa-microsoft"></i> <!-- Иконка Microsoft -->
+            <i class="fab fa-ethereum"></i>
+            <i class="fab fa-bitcoin"></i>
+            <i class="fab fa-android"></i>
+            <i class="fab fa-java"></i>
+            <i class="fab fa-python"></i>
         </div>
     </section>
-</main>
 
-<!-- Модальное окно для "О нас" -->
-<div id="aboutModal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-close="aboutModal">&times;</span>
-        <h2>О нас</h2>
-        <p>Мы предлагаем инвестиционные решения для успешного будущего. Наши проекты отличаются надежностью и высоким доходом.</p>
+    <!-- Модальные окна -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('aboutModal')">&times;</span>
+            <h3>О нас</h3>
+            <p>Мы — команда профессионалов, предлагающих уникальные инвестиционные возможности для стабильного роста вашего капитала.</p>
+        </div>
     </div>
-</div>
 
-<!-- Модальное окно для "Контакты" -->
-<div id="contactModal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-close="contactModal">&times;</span>
-        <h2>Контакты</h2>
-        <p>Телефон: +373 790 87 309 Olarescu “KALIFF” Gheorghe</p>
-        <p>Email: gikugiku229@gmail.com</p>
-        <button onclick="window.location.href='mailto:gikugiku229@gmail.com'">Написать нам</button>
-        <button onclick="window.location.href='tel:+37379087309'">Позвонить</button>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('contactModal')">&times;</span>
+            <h3>Контакты</h3>
+            <p>Телефон: +373 790 87 309 (Olarescu "KALIFF" Gheorghe)</p>
+            <p>Email: gikugiku229@gmail.com</p>
+        </div>
     </div>
-</div>
 
-<!-- Модальное окно для "Услуги" -->
-<div id="servicesModal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" data-close="servicesModal">&times;</span>
-        <h2>Наши Услуги</h2>
-        <ul>
-            <li>Консультирование по инвестициям</li>
-            <li>Анализ рынка</li>
-            <li>Инвестиционные портфели</li>
-        </ul>
+    <div id="servicesModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('servicesModal')">&times;</span>
+            <h3>Наши Услуги</h3>
+            <p>Мы предлагаем инвестиционные решения с высоким потенциалом роста. Ваш капитал будет работать на вас!</p>
+        </div>
     </div>
-</div>
 
-<footer>
-    <p>&copy; 2025 Инвестиционный сайт. Все права защищены.</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Все права защищены.</p>
+    </footer>
 
-<script src="script.js"></script>
-
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
