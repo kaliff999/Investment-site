@@ -1,15 +1,16 @@
-/* Стили для основной страницы */
+/* Основные стили для страницы */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
     color: #333;
+    box-sizing: border-box;
 }
 
 /* Заголовок */
 header {
-    background: linear-gradient(to right, #333, #b7975a); /* Градиент от чёрного к золотому */
+    background: linear-gradient(to right, #333, #b7975a);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -46,7 +47,7 @@ nav ul li button {
 }
 
 nav ul li button:hover {
-    background-color: #b7975a; /* Золотой при наведении */
+    background-color: #b7975a;
     color: black;
 }
 
@@ -54,21 +55,23 @@ nav ul li button:hover {
 .intro {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(to bottom, #1a1a1a, #4f5d73); /* Градиент чёрного с серым */
+    background: linear-gradient(to bottom, #1a1a1a, #4f5d73);
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .intro h2 {
     font-size: 3rem;
     font-family: 'Arial', sans-serif;
-    color: #b7975a; /* Золотой цвет */
+    color: #9b1b30; /* Бордово-красный */
 }
 
 .intro p {
     font-size: 1.3rem;
     margin-top: 20px;
-    color: #90e044; /* Яркий зелёный */
+    color: #90e044;
 }
 
 /* Секция с иконками брендов */
@@ -78,36 +81,40 @@ nav ul li button:hover {
     margin-top: 40px;
     padding: 20px 0;
     background-color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .icon-container {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .icon-container i {
     font-size: 4rem;
-    color: #b7975a; /* Золотой */
+    color: #b7975a;
     margin: 0 20px;
     transition: all 0.3s ease;
 }
 
 .icon-container i:hover {
-    color: #90e044; /* Яркий зелёный при наведении */
-    transform: scale(1.1); /* Увеличение иконок при наведении */
+    color: #90e044;
+    transform: scale(1.1);
 }
 
 /* Модальные окна */
 .modal {
-    display: none; /* Модальные окна скрыты по умолчанию */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный фон */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
@@ -151,7 +158,7 @@ footer p {
 /* Кнопки */
 button {
     padding: 10px 20px;
-    background-color: #90e044; /* Яркий зелёный */
+    background-color: #90e044;
     color: black;
     border: none;
     border-radius: 5px;
@@ -161,6 +168,6 @@ button {
 }
 
 button:hover {
-    background-color: #b7975a; /* Золотой при наведении */
+    background-color: #b7975a;
     color: white;
 }
